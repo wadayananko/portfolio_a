@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>ご予約｜焼肉 味田 【公式サイト】</title>
+<meta charset="UTF-8">
+<meta name="keyword" content="和歌山市,焼肉,おすすめ,居酒屋,昭和,レトロ,黒毛和牛,駅近,予約">
+<meta name="description" content="和歌山駅から徒歩3分、好立地でアットホームな焼肉店です。ご予約・お問い合わせはこちらのページからお願いいたします。">
+<meta name="viewport" content="width=device-width" initial-scale="1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$('a[href^=#]').click(function(){
+var speed = 500;
+var href= $(this).attr("href");
+var target = $(href == "#" || href == "" ? 'html' : href);
+var position = target.offset().top;
+$("html, body").animate({scrollTop:position}, speed, "swing");
+return false;
+});
+});
+</script>
+</head>
+<body>
+<header>
+<div id="header-in">
+<h1><a href="index.html"><img src="image/logo.png" width="300px" height="73px" alt="logo"></a></h1>
+<nav>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="kodawari.html">こだわり</a></li>
+<li><a href="menu.html">メニュー</a></li>
+<li><a href="index.html#access">アクセス</a></li>
+<li><a href="yoyaku.html">ご予約</a></li>
+<li><a href="photo.html">ギャラリー</a></li>
+</ul>
+</nav>
+</header>
+<article>
+<ol>
+<li><a href="index.html">HOME</a>&nbsp;&nbsp;&gt;</li>
+<li>ご予約・お問い合わせ</li>
+</ol>
+<h1 class="title">ご予約</h1>
+<section class="wrapper">
+<div class="yoyaku">
+<img src="image/tenpo2.jpg" width="789px" height="385px" alt="tenpo">
+<h2>焼肉　味田</h2>
+<p><strong>電話番号：073-422-2222</strong><br>
+受付時間：16：00～22：00</p>
+</div>
+</section>
+<h1 class="title">お問い合わせ</h1>
+<section class="wrapper">
+<form>
+<p><lavel for="name">お名前</lavel></p>
+<input type="text" name="name" id="name" required>
+<p><lavel for="kana">フリガナ</lavel></p>
+<input type="text" name="kana" id="kana">
+<p><lavel for="mail">メールアドレス</lavel></p>
+<input type="email" name="email" id="mail" required>
+<p><lavel for="tell">電話番号</lavel></p>
+<input type="tel" name="tel" id="tell" required>
+<p><lavel>お問合わせ内容</lavel></p>
+<textarea name="comment" required></textarea>
+<p><button type="submit">送信</button></p>
+</form>
+</section>
+</article>
+<footer>
+<article class="icon">
+<a href="https://ja-jp.facebook.com/" target="_blank" rel="noopener"><img src="image/icon-facebook01.png" width="25px" height="25px"></a>
+<a href="https://www.instagram.com/?hl=ja" target="_blank" rel="noopener"><img src="image/icon-instagram01.png" width="25px" height="25px"></a>
+<a href="https://twitter.com/?lang=ja" target="_blank" rel="noopener"><img src="image/icon-twitter01.png" width="25px" height="25px"></a>
+</article>
+<div class="page_top"><a href="#header-in"></a></div>
+<small>&copy; 2021 Mita All Rights Reserved.</small>
+</footer>
+</body>
+</html>

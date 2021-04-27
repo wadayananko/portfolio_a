@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>ANNA's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="keyword" content="">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width" initial-scale="1">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+<link rel="icon" type="image/x-icon" href="images/favicon.png">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$('a[href^=#]').click(function(){
+var speed = 500;
+var href= $(this).attr("href");
+var target = $(href == "#" || href == "" ? 'html' : href);
+var position = target.offset().top;
+$("html, body").animate({scrollTop:position}, speed, "swing");
+return false;
+});
+});
+</script>
+</head>
+<body>
+<!--ここからheader-->
+<header>
+<div class="header-in" id="header-in">
+<h1>
+<img src="images/logo.png" alt="logo">
+</h1>
+<nav>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="#about">ABOUT</a></li>
+<li><a href="#skills">SKILLS</a></li>
+<li><a href="#works">WORKS</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<!--ここまでheader-->
+<main>
+<div class="mainvisual">
+<img src="images/mainvisual.jpg" alt="mainvisual">
+</div>
+<!--ここからabout-->
+<article class="about_back">
+<section>
+<h2 class="title" id="about">About</h2>
+<div class="about">
+<div class="me_img">
+<img src="images/about.jpg" alt="about">
+</div>
+<div class="name">
+<h3>和田　晏奈</h3>
+<p class="furigana">Wada Anna</p>
+<p class="honbun">1992年28歳、和歌山県和歌山市生まれです。<br>
+高校卒業後、接客業を中心に経験を積んできました。<br>
+前職では墓地墓石の販売営業業務のほか、<br>
+霊園の折込チラシのデザイン企画や<br>
+webサイトの修正をデザイナーに提案する業務を経験しました。<br>
+そこでデザインの仕事に興味を持ち、<br>
+現在職業訓練校（ネットショップ・Webサイト制作科）<br>
+を受講しております。<br><br>
+出産を機に自分を見つめ直し今後長く続けていきたい仕事は、<br>
+前職にて培ってきた傾聴力と提案力を生かし、<br>
+お客様の期待以上のものを作り上げることで<br>
+やりがいを感じることができる<br>
+Web制作のお仕事だと考えております。<br><br>
+こんなにも情熱的に何かに打ち込んで挑戦したいと<br>
+思ったのはやはり娘を育てていくという強い決心があるからです。<br>
+そしてHTMLとCSSを訓練校で学んだとき、時間を忘れて<br>
+コードを書いている自分がいました。<br>
+純粋にとても楽しかったのです。<br>
+<p>
+</div>
+</div>
+</section>
+</article>
+<!--ここまでabout-->
+<!--ここからskill-->
+<article>
+<section class="skill_wrapper">
+<h2 class="title" id="skills">Skills</h2>
+<div class="skill">
+<div class="skills">
+<img src="images/teian.jpeg" alt="about">
+<h3>提案力</h3>
+<p>前職ではお客様のご要望とは別に<br>
+新たなご提案をすることで<br>
+大変喜んでいただくことがありました。<br>
+お客様の本当に大切にしていることを探し<br>
+ご提案することを得意としております。</p>
+</div>
+<div class="skills">
+<img src="images/taiping.jpeg" alt="about">
+<h3>タイピング力</h3>
+<p>10分間で最高1500文字<br>
+タッチタイピングすることが<br>
+可能です。</p>
+</div>
+<div class="skills">
+<img src="images/html.jpeg" alt="about">
+<h3>HTML5＆CSS3</h3>
+<p>職業訓練でコーディングを学びました。<br>
+基礎的なことは熟知しております。<br>
+調べながらサイト作成も経験ございます。</p>
+</div>
+<div class="skills">
+<img src="images/javascript.jpg" alt="about" class="top_margin">
+<h3>JavaScript</h3>
+<p>今現在スキルはございませんが、<br>
+progateにて勉強中です。
+</p>
+</div>
+<div class="skills">
+<img src="images/Photoshop.jpg" alt="about" class="top_margin">
+<h3>Photoshop</h3>
+<p>職業訓練で一から<br>
+基本操作を学んでおります。<br>
+バナー作成やチラシ・メニュー作成、<br>
+様々なことに挑戦していきたいです。</p>
+</div>
+<div class="skills">
+<img src="images/Illustrator.png" alt="about" class="top_margin">
+<h3>Illustrator</h3>
+<p>職業訓練で一から<br>
+基本操作を学ぶんでおります。<br>
+</p>
+</div>
+</div>
+</section>
+</article>
+<!--ここまでskill-->
+<!--ここからworks-->
+<article>
+<section>
+<h2 class="title" id="works">Works</h2>
+<div class="work">
+<div class="works">
+<a href="midou/index.html" target="_blank" rel="noopener"><img src="images/work1.png" alt="midou">
+<h3>焼肉「味田」（サンプルサイト）</h3></a>
+<p>制作所要日数：9日間</p>
+<p class="works_p">行きつけの焼き肉屋さんに<br>
+Webサイトを作成させてほしいとお伝えし<br>
+打ち合わせや撮影にご協力いただきました。<br>
+馴染みのお客様が多いお店なので<br>
+新規顧客（特に若年層）に届くように、<br>
+交通の便の良さや系列店には無い<br>
+温かみのあるお店ということが伝わる<br>
+サイトになるよう意識しました。
+</p>
+</div>
+<div class="works">
+<a href="clinic/index.html" target="_blank" rel="noopener"><img src="images/work2.png" alt="wada">
+<h3>わだクリニック（サンプルサイト）</h3></a>
+<p>制作所要日数：5日間</p>
+<p class="works_p">様々な小児科のWebサイトを参考にして<br>
+作り上げました。<br>
+子どもらしいサイトになるように<br>
+パステルカラーを使用しました。<br>
+</p>
+</div>
+<div class="works">
+<a href="index.html"><img src="images/work3.png" alt="wada">
+<h3>ポートフォリオサイト</h3></a>
+<p>制作所要日数：4日間</p>
+<p class="works_p">このポートフォリオサイトです。<br>
+メイン画像はたまたま出会った野良猫です。<br>
+夢中になってシャッターを押し続けたことが<br>
+忘れられない思い出深い写真です。</p>
+</div>
+</div>
+</section>
+</article>
+<!--ここまでskill-->
+</main>
+<!--ここからfooter-->
+<footer>
+<div class="page_top"><a href="#header-in"></a></div>
+<small>&copy; 2021 Wada Anna Portfolio</small>
+</footer>
+<!--ここまでfooter-->
+</body>
+</html>

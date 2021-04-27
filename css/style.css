@@ -1,0 +1,252 @@
+body{
+	margin: 0;
+}
+header,main,footer{
+	font-family: 'Raleway', sans-serif;
+	color: #333;
+	font-size: 100%;
+}
+article{
+	text-align: center; /*テキスト中央寄せ*/
+	width: 960px; /*画面幅*/
+    margin: 0 auto; /*中央寄せ*/
+}
+.mainvisual img{
+	max-width: 1920px;
+	height: 750px;
+	width: 100%;
+	object-fit: cover; /*トリミング*/
+}
+/*----------------------
+ここからheader
+-----------------------*/
+nav ul{
+    text-align: right;
+    padding-top: 57px; /*ロゴに位置を合わす*/
+}
+nav li{
+	list-style-type: none;
+	margin: 0 20px; /*リストの幅を開ける*/
+	font-size: 90%;
+	display: inline;   
+}
+nav a{
+	text-decoration :none;
+	color: #333;
+}
+nav a:hover{
+	color: #e4007f; /*マゼンタ*/
+}
+.header-in h1{
+	color: #333;
+	display: inline-block;
+	float: left; /*ロゴ左寄せ*/
+	font-size: 250%;
+	font-weight: 100;
+}
+.header-in{
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+/*----------------------
+ここからabout
+------------------------*/
+.about img{
+	width: 400px; /*プロフィール写真*/
+	height: 400px;
+	border-radius: 50%; /*丸抜き*/
+}
+.title{
+	font-size: 300%;
+	font-weight: 100;
+	margin: 200px auto 100px auto; /*セクション区切りの余白*/
+}
+.name h3,
+.furigana,
+.honbun {
+	text-align: left; /*プロフィール文章左寄せ*/
+	margin-left: 50px; /*写真とテキストの間余白*/
+}
+.about{
+	display: flex; /*横並び*/
+	align-items: center; /*中央揃え*/
+	justify-content: space-around; /*左右等間隔*/
+}
+.name h3{
+	font-size: 150%;
+}
+/*-----------------------
+ここからskills
+-------------------------*/
+.skills img{
+	width: 150px; /*画像サイズ統一*/
+	height: 150px;
+}
+.skill{
+	display: flex; /*横並び*/
+	justify-content: space-between; /*等間隔 両端余白0*/
+	flex-wrap: wrap; /*折り返す*/
+}
+.top_margin{
+	margin-top: 50px; /*二行目の上余白*/
+}
+/*-----------------------
+ここからworks
+-------------------------*/
+.work img{
+	width: 450px; /*画像サイズ統一*/
+	height: 218px;
+}
+.work{
+	display: flex; /*横並び*/
+	justify-content: space-between; /*等間隔 両端余白0*/
+	flex-wrap: wrap; /*折り返す*/
+}
+.works{
+	margin-top: 30px; /*画像の上の余白*/
+}
+.works a{
+	text-decoration: none; /*デフォルト消去*/
+	color: #333;
+
+}
+.works a:hover{
+	opacity: 0.5; /*ホバー効果*/
+	transition: .3s;
+}
+/*-----------------------
+ここからfooter
+------------------------*/
+footer{
+	text-align: center; /*テキスト中央寄せ*/
+	padding: 10px; 
+	background-color: #006400;
+	color: #fff;
+	font-size: 70%;
+	margin-top: 100px;
+}
+/*--------------------
+back_page
+----------------------*/
+.page_top{
+	width: 90px;
+	height: 90px;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	opacity: 0.6;
+}
+.page_top a{
+	position: relative;
+	display: block;
+	width: 90px;
+	height: 90px;
+	text-decoration: none;
+	border-radius: 50%;
+}
+.page_top a::before{
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	content: '\f102';
+	font-size: 25px;
+	color: #000;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: -40px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	text-align: center;
+}
+.page_top a::after{
+	content: 'PAGE TOP';
+	font-size: 13px;
+	color: #000;
+	position: absolute;
+	top: 45px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	text-align: center;
+	color: #000;
+}
+.page_top a:hover{
+	  background-color: #006400;
+}
+  
+
+
+
+
+
+
+/*---------------------------------
+media
+-----------------------------------*/
+@media(max-width:1000px){
+article{
+	width: 100%;
+}
+.about{
+	display :block;
+}
+.skills img{
+	width: 100px;
+	height: 100px;
+}
+.skill{
+	display: block;
+}
+.work img{
+	width: 450px;
+	height: 218px;
+}
+.work{
+	display: block;
+}
+}
+
+
+@media(max-width:768px){
+.work img{
+	max-width: 100%;
+	height: auto;
+}
+.about img{
+	width: 300px;
+	height: 300px;
+}
+nav ul{
+    text-align: center;
+    padding: 0;
+}
+.name h3,
+p.furigana{
+	text-align:center;
+	margin-left:0;
+}
+nav li{
+	margin: 0 10px;
+}
+p.honbun{
+	margin-left:10px;
+}
+.works_p{
+	text-align:left;
+	margin:0 10px;
+}
+.header-in h1{
+	float: none;
+}
+.skills{
+	margin-bottom:30px;
+}
+.top_margin{
+	margin-top:30px;
+}
+}

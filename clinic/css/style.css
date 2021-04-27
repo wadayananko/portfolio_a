@@ -1,0 +1,389 @@
+body{
+	margin:0;
+	font-family: 'Hachi Maru Pop', cursive;	
+	color:#333;
+}
+header,main{
+	width:80%;
+	margin:0 auto;
+}
+.wrapper p{
+	line-height:20px;
+	font-family:"Hiragino Kaku Gothic Pro",sans-serif;
+}
+/*----------------------
+header
+------------------------*/
+header{
+	margin-bottom:20px;
+	font-size:100%;
+}
+.logo{
+	float:left;
+}
+main{
+	clear:both;
+}
+.header_navi ul{
+	list-style-type:none;
+	text-align:right;
+
+}
+.header_navi li{
+	display:inline-block;
+	padding:7px 25px 5px 25px;
+}
+/*------------------------
+hover
+---------------------------*/
+.header_navi a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color:#333;
+}
+.header_navi a::after {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #F08080;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+.header_navi a:hover::after {
+  bottom: -4px;
+  opacity: 1;
+  visibility: visible;
+}
+/*--------------------------
+topix
+--------------------------*/
+.topix{
+	display: flex;
+	justify-content: space-between;
+	margin:50px auto;
+}
+.topix img{
+	border-radius:50%;
+	width:230px;
+	height:230px;
+}
+.topix h2{
+	font-size:120%;
+	text-align:center;
+	margin-top:5px;
+}
+.title{
+	font-size:200%;
+	text-align:center;
+	margin:120px auto 50px auto;
+}
+.topix a{
+	text-decoration:none;
+	color:#333;
+}
+.topix a:hover{
+	opacity:0.5;
+}
+
+/*----------------------
+???m?点
+-------------------------*/
+.time{
+	background-color:#ADD8E6;
+	border-radius:10px;
+	color:#fff;
+	padding:2px 10px;
+	letter-spacing:0.2em;
+}
+/*-------------------------
+guide
+---------------------------*/
+.guide table{
+	border:1px solid #333;
+	border-collapse:collapse;
+	margin-top:5px;
+}
+.guide th{
+	font-size:90%;
+	border:1px solid #333;
+	padding:10px;
+}
+.guide td{
+	font-size:90%;
+	border:1px solid #333;
+	padding:10px;
+
+}
+.do{
+	color:blue;
+	font-weight:bold;
+}
+.niti{
+	color:red;
+	font-weight:bold;
+}
+.backcolor{
+	background-color:#FFE2B2;
+}
+iframe{
+	float:right;
+	margin-top:20px;
+	margin-bottom:200px;
+	display:block;
+	height:565px;
+}
+.guide{
+	float:left;
+	line-height:15px;
+}
+footer{
+	clear:both;
+	text-align:center;
+	background-color:#F08080;
+	color:#fff;
+	padding:10px;
+	font-size:80%;
+}
+/*-------------------------
+pan
+---------------------------*/
+ol li{
+	display:inline;
+	margin-right:5px;
+	font-size:80%;
+}
+ol{
+	padding-left:0;
+}
+ol a{
+	color:#333;
+}
+ol a:hover{
+	opacity:0.5;
+}
+/*------------------
+section
+---------------------*/
+.wrapper{
+	background-color:#F5DEB3;
+	padding:15px 30px;
+	border-radius:10px;
+	margin-bottom:100px;
+	clear:both;
+}
+
+.wrapper_2 p{
+	font-family:"???C???I","Hiragino Kaku Gothic Pro",sans-serif;
+}
+.wrapper_2{
+	float:left;
+}
+.doctor{
+	margin-bottom:30px;
+}
+.bottom{
+	border-bottom:1px solid #333;
+	display:inline;
+}
+/*----------------------
+guide.html
+-----------------------*/
+.wrapper_3_flex{
+	display:flex;
+	justify-content: space-between;
+	flex-wrap:wrap;
+}
+.wrapper_3{
+	display:inline-block;
+	background-color:#EAF6FD;
+	padding:10px 15px;
+	border-radius:10px;
+	margin-bottom:30px;
+	text-align:center;
+}
+.gaiyou table{
+	border:1px solid #333;
+	border-collapse:collapse;
+	margin:20px auto 100px auto;
+}
+.gaiyou th{
+	font-size:120%;
+	border:1px solid #333;
+	padding:20px;
+}
+.gaiyou td{
+	font-size:120%;
+	border:1px solid #333;
+	padding:20px;
+}
+
+/*-----------------------
+footer_navi
+--------------------------*/
+.footer_navi ul{
+	display:flex;
+	justify-content: center; 
+	list-style-type:none;
+}
+.footer_navi a{
+	color:#fff;
+}
+.footer_navi a:hover{
+	color:blue;
+}
+
+
+
+
+
+/*---------------------
+ 1024pxメディアクエリ
+--------------------*/
+@media(max-width:1024px){
+header img{
+	max-width:100%;
+}
+main{
+	width:auto;
+}
+main img{
+	max-width:100%;
+	height:auto;
+}
+header{
+	font-size:80%;
+}
+.guide{
+	padding:10px;
+}
+.post p{
+	padding-left:10px;
+}
+.wrapper_2{
+	padding-left:10px;
+}
+.wrapper_3_flex{
+	display:block;
+	text-align:center;
+}
+}
+
+/*--------------------------
+ 768pxメディアクエリ
+-----------------------------*/
+@media(max-width:768px){
+.logo{
+	float:none;
+}
+.header_navi ul{
+	text-align:left;
+	padding:0;
+}
+.topix{
+	width:75%;
+	margin:0 auto;
+	display:flex;
+	flex-wrap:wrap;
+}
+.wrapper_2 h2{
+	padding-left:10px;
+}
+.wrapper_2 p{
+	padding-left:10px;
+	padding-right:10px;
+}
+.guide{
+	padding-left:10px;
+}
+.gaiyou th{
+	font-size:75%;
+}
+.gaiyou td{
+	font-size:75%;
+}
+header{
+	font-size:70%;
+}
+.doctor{
+	padding-left:20px;
+}
+ol{
+	padding-left:10px;
+}
+iframe{
+	float:none;
+	padding-left:10px;
+}
+.wrapper{
+	margin-left:5px;
+    margin-right:5px;
+}
+}
+/*--------------------------
+ 375pxメディアクエリ
+-----------------------------*/
+@media(max-width:375px){
+iframe{
+	max-width:100%;
+}
+.topix{
+	width:75%;
+	margin:0 auto;
+	display:flex;
+	flex-wrap:wrap;
+}
+.topix img{
+	width:115px;
+	height:115px;
+}
+.title{
+	font-size:120%;
+}
+.post p{
+	font-size:90%;
+}
+.gaiyou table{
+	width:100%;
+}
+.gaiyou th{
+	font-size:90%;
+	padding:10px;
+}
+.gaiyou td{
+	font-size:90%;
+	padding:10px;
+}
+header{
+	font-size:100%;
+}
+.header_navi ul{
+	text-align:center;
+
+}
+.header_navi li{
+	padding:7px 15px 5px 15px;
+}
+.footer_navi ul{
+	padding:0;
+}
+.guide table{
+	margin:30px auto;
+}
+.guide h2{
+	font-size:90%;
+}
+.wrapper_2 h2{
+	font-size:100%;
+}
+.wrapper h2{
+	font-size:100%;
+}
+.wrapper h3{
+	font-size:95%;
+}
+}
